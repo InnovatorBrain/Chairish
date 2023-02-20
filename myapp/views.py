@@ -1,12 +1,8 @@
 from django.shortcuts import render
-
-# Create your views here.
-from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
     return render(request, "index.html")
-    # return HttpResponse("Hello, world!")
 
 def about(request):
     return render(request, 'about.html')
@@ -32,3 +28,5 @@ def shop(request):
 def thankyou(request):
     return render(request, 'thankyou.html')
 
+# def handler404(request, exception):              >>> for error msg code having error 
+#     return render(request, '404.html', status=404)
